@@ -11,13 +11,13 @@ import {
 import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
-import Article from "../components/homepage/article";
+import Article from "../components/homepage/story";
 import Works from "../components/homepage/works";
 import AllProjects from "../components/projects/allProjects";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-import myArticles from "../data/articles";
+import myStories from "../data/stories";
 
 import "./styles/homepage.css";
 
@@ -149,18 +149,18 @@ const Homepage = () => {
 						</div>
 
 						<div className="homepage-after-title">
-							<div className="homepage-articles">
-								{myArticles.map((article, index) => (
+							<div className="homepage-stories">
+								{myStories.map((story, index) => (
 									<div
-										className="homepage-article"
+										className="homepage-story"
 										key={(index + 1).toString()}
 									>
 										<Article
 											key={(index + 1).toString()}
-											date={article().date}
-											title={article().title}
-											description={article().description}
-											link={"/article/" + (index + 1)}
+											date={story().date}
+											title={story().title}
+											description={story().description}
+											link={"/story/" + (index + 1)}
 										/>
 									</div>
 								))}

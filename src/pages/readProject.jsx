@@ -69,7 +69,7 @@ const ReadProject = () => {
 							</div>
 							<p></p>
 							<p></p>
-							<div className="read-project-body" style={{color: '#9294A8'}}>
+							<div className="read-project-body" style={{color: '#000000'}}>
 								{project().description}
 								<p></p>
 								<ProjectStyle>{project().body}</ProjectStyle>

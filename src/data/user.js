@@ -24,10 +24,10 @@ const INFO = {
 			"When I started my journey into the field of computer science, I did so because I had a real passion for creating. As a child, I would spend my days flexing my creative muscle in whatever way I could, first with things like blocks and legos, then draw and paint, build models of buildings and people with whatever spare parts I could find scattered around. I would invent narratives and write stories, and make short films. The medium, to me, didn’t matter. It was just about having the opportunity to make something new, invent from nothing. It wasn’t until the third grade that I began to wonder if there was a particular path for me. You see, it was in the third grade that my older brother introduced me to this program called GameMaker. It was a deceptively simple software for creating video games, but it opened a world of possibilities I had never even dreamed of. I was able to create entire worlds, alive with characters, dialogue and sprites, all created by me. It was then that I began to realize the true potential of the computer as a tool for creativity. I don’t think of writing code as typing out characters on a keyboard, to me, it is the same as the stroke of a brush on canvas. It is merely another facete for my creativity, an endless mound of clay ripe for molding. ",
 	},
 
-	articles: {
-		title: "I'm passionate about pushing the boundaries of what's possible and inspiring the next generation of innovators.",
+	stories: {
+		title: "“I write to find out what I think.”",
 		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
+			"-Stephen King",
 	},
 
 	projects: [

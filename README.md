@@ -26,7 +26,7 @@ Readme here: <a href="https://tharindu.dev/portfolio/reactfolio/" target="_blank
     -   Home
     -   About
     -   Projects
-    -   Articles
+    -   Stories
     -   Contact
 -   📱 Fully Responsive
 -   🛠 Easy configurations
@@ -63,15 +63,15 @@ Directory: `/src/data/`
 
     From this you can change the content of each page of the web application.
 
--   `articles.js`
+-   `stories.js`
 
-    From this you can add your articles to the web application.
+    From this you can add your stories to the web application.
 
     Instructions:
 
-    -   Add new article
+    -   Add new story
 
-        1. Create a new function starts with `article_`. For example you can add new function named `article_3`.
+        1. Create a new function starts with `story_`. For example you can add new function named `story_3`.
 
         2. Then add the data accordingly.
 
@@ -79,7 +79,7 @@ Directory: `/src/data/`
             - In React there has no keyword `class`, so you should use `className` to define html classes.
 
             ```js
-            function article_3() {
+            function story_3() {
             	return {
             		date: "7 May 2023",
             		title: "The Benefits of Cloud Computing",
@@ -92,9 +92,9 @@ Directory: `/src/data/`
             				`,
             		body: (
             			<React.Fragment>
-            				<div className="article-content">
+            				<div className="story-content">
             					<div className="paragraph">
-            						Content of article 1
+            						Content of story 1
             					</div>
             					<img
             						src="https://picsum.photos/200/300"
@@ -108,10 +108,10 @@ Directory: `/src/data/`
             }
             ```
 
-        3. In the last lines you will see an array to which you need to add your new `articles` function.
+        3. In the last lines you will see an array to which you need to add your new `stories` function.
 
             ```js
-            const myArticles = [article_1, article_2, article_3];
+            const myStories = [story_1, story_2, story_3];
             ```
 
 -   `seo.js`

@@ -44,7 +44,7 @@
 
 .read-project-date-container {
 	justify-content: center;
-	border-left: 2px solid var(--quaternary-color);
+	border-left: 0px solid var(--quaternary-color);
 	color: var(--tertiary-color);
 	font-size: 16 px;
 	align-items: center;
@@ -53,12 +53,12 @@
 .read-project-skills{
 	width: 100%;
 	border-radius: 20px;
-	background-color: #D7F5C9;
+	background-color: #ABC4C2;
 }
 .read-project-date {
 	justify-content: center;
 	font-family: var(--primary-font);
-	padding-left: 15px;
+	padding-left: 0px;
 }
 
 .read-project-title {
@@ -79,7 +79,7 @@
 	line-height: 30px;
 	font-family: system-ui;
 	border-radius: 20px;
-	background-color: #FFFFFF;
+	background-color: #ABC4C2;
 	
-	color: #52525b;
+	color: #000000;
 }

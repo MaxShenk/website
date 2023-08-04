@@ -60,6 +60,18 @@ function skill_10() {
         logo: "../cs.png"
     }
 }
-const allSKills = [skill_1,skill_2,skill_3,skill_4,skill_5,skill_6,skill_7,skill_8,skill_9,skill_10];
+function skill_11() {
+	return {
+        title: "Unity",
+        logo: "../Unity.png"
+    }
+}
+function skill_12() {
+	return {
+        title: "Blender",
+        logo: "../Blender.png"
+    }
+}
+const allSKills = [skill_1,skill_2,skill_3,skill_4,skill_5,skill_6,skill_7,skill_8,skill_9,skill_10,skill_11,skill_12];
 
 export default allSKills;

@@ -37,8 +37,8 @@
 }
 
 .homepage-image-container {
-	width: 500px;
-	height: 500px;
+	width: 300px;
+	height: 300px;
 }
 
 .homepage-image-wrapper {
@@ -78,17 +78,18 @@
 	padding-top: 40px;
 }
 
-.homepage-articles {
+.homepage-stories {
 	flex-basis: 900px;
 	padding-top: 30px;
 	margin-left: -30px;
 }
 
-.homepage-article {
+.homepage-story {
 	padding-bottom: 5px;
 }
 
 .homepage-works {
+	
 	flex-basis: 600px;
 	padding-top: 30px;
 }
@@ -138,11 +139,12 @@
 		flex-basis: auto;
 	}
 
-	.homepage-articles {
+	.homepage-stories {
 		flex-basis: auto;
 	}
 
 	.homepage-works {
+		
 		flex-basis: auto;
 		margin-left: -25px;
 		margin-right: -25px;

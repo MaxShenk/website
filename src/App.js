@@ -5,8 +5,8 @@ import ReactGA from "react-ga4";
 import Homepage from "./pages/homepage";
 import About from "./pages/about";
 import Projects from "./pages/projects";
-import Articles from "./pages/articles";
-import ReadArticle from "./pages/readArticle";
+import Stories from "./pages/stories";
+import ReadArticle from "./pages/readStory";
 import ReadProject from "./pages/readProject";
 import Contact from "./pages/contact";
 import Notfound from "./pages/404";
@@ -27,8 +27,8 @@ function App() {
 				<Route path="/" element={<Homepage />} />
 				<Route path="/about" element={<About />} />
 				<Route path="/projects" element={<Projects />} />
-				<Route path="/articles" element={<Articles />} />
-				<Route path="/article/:slug" element={<ReadArticle />} />
+				<Route path="/stories" element={<Stories />} />
+				<Route path="/story/:slug" element={<ReadArticle />} />
 				<Route path="/projects/:slug" element={<ReadProject />} />
 				<Route path="/contact" element={<Contact />} />
 				<Route path="*" element={<Notfound />} />
