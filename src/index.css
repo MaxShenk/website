@@ -4,6 +4,7 @@
 body {
 	margin: 0;
 	font-family: var(--primary-font);
+	color: #F5E7E1;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -11,4 +12,5 @@ body {
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 		monospace;
+	color: #F5E7E1;
 }

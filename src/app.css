@@ -1,25 +1,27 @@
 @import "/src/data/styles.css";
-
+.html{
+	background-color: #F5E7E1;
+}
 ::-webkit-scrollbar {
 	width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-	background-color: #f1f1f1;
+	background-color: #6096BA;
 }
 
 ::-webkit-scrollbar-thumb {
-	background-color: #383636;
+	background-color: #C191A1;
 	border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
 	background-color: rgb(0, 0, 0);
 }
-
 .page-content {
-	background-color: white;
+	background-color: #C9CCF5;
 	position: relative;
+	color: #FFFFFF;
 }
 
 .page-content:before,
@@ -29,8 +31,8 @@
 	top: 0;
 	bottom: 0;
 	width: calc((100% - 1200px) / 2);
-	background-color: #fafafa;
-	border: 1px solid #f4f4f5;
+	background-color: #F5E7E1;
+	border: 0px solid #F5E7E1;
 }
 
 .page-content:before {
@@ -69,12 +71,14 @@
 	position: block;
 }
 
+
 .page-footer::before {
 	content: "";
 	position: absolute;
 	left: 0;
 	right: 0;
 	border-top: 2px solid var(--tertiary-color);
+	
 }
 
 @media (max-width: 1270px) {
