@@ -26,28 +26,20 @@
 }
 
 .skill-container {
-	align-items: center;
-	text-align: center;
-	justify-content: center;
+
 	padding: 10px;
 }
 
 .skill-logo {
-	align-items: center;
-	text-align: center;
-	justify-self: center;
-	width: 64px;
+
+	width: 100%;
 }
 
 .skill-logo img {
-	text-align: center;
-	justify-self: center;
-	align-items: center;
-	width: 150%;
+	width: 100%;
 }
 
 .skill-image {
-	padding-left: 5px;
 	text-align: center;
 	justify-self: center;
 	align-items: center;

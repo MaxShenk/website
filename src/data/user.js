@@ -9,7 +9,6 @@ const INFO = {
 	socials: {
 		linkedin: "https://www.linkedin.com/in/maxwell-shenk-687b26144/",
 		instagram: "https://www.instagram.com/maxwellshenk/",
-		facebook: "https://facebook.com/",
 	},
 
 	homepage: {

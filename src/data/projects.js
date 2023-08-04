@@ -75,7 +75,23 @@ function project_2() {
 		title: "3D Rendering Engine",
 		description:
 			"A three dimensional graphics engine created from scratch using C++ and OpenGL Libraries.",
-		style: ``,
+		style: `
+			.project-content {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.randImage {
+				width: 100%;
+				align-self: center;
+				outline: 2px solid black;
+			}
+			.video-content {
+				width: 100%;
+				align-self: center;
+				outline: 2px solid black;
+			}
+			`,
 		keywords: [
 			"3D Engine",
 			"Maxwell",
@@ -143,7 +159,7 @@ function project_3() {
 		body: (
 			<React.Fragment>
 				<div className="project-content">
-				<video className="video-content" src="../PowerApp.mp4" width="614" height="992" controls="controls" autoplay="true" />
+				<video className="video-content" src="../PowerApp.mp4" width="100%" controls="controls" autoplay="true" />
 				<p></p>
 				<hr height= "9px" />
 				<p></p>
