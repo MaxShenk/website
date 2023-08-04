@@ -114,7 +114,6 @@ function project_3() {
 		title: "PowerApps Games",
 		description:
 			"A collection of 3 games built entirely using Microsoft PowerApps.",
-		style: ``,
 		keywords: [
 			"PowerApps",
 			"Maxwell",
@@ -200,7 +199,6 @@ function project_3() {
 			title: "A La Kart",
 			description:
 				"A co-op competitive karting and cooking game. Created in Unity and Blender.",
-			style: ``,
 			keywords: [
 				"Unity",
 				"Maxwell",
@@ -282,7 +280,6 @@ function project_5() {
 		title: "Java Game",
 		description:
 			"A co-op 2D platformer programmed entirely in Java.",
-		style: ``,
 		keywords: [
 			"Unity",
 			"Maxwell",

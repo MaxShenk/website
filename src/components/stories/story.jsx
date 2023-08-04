@@ -6,7 +6,7 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import "./style/story.css";
 
 const Article = (props) => {
-	const { date, title, description, link } = props;
+	const { title, description, link } = props;
 
 	return (
 		<React.Fragment>
