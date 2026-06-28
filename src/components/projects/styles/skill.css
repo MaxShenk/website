@@ -5,9 +5,10 @@
 	text-align: center;
 	mix-blend-mode: normal;
 	border-radius: 20px;
-	opacity: 0.8;
+	opacity: 0.92;
 	height: 100%;
-	background: #ABC4C2;
+	background: var(--teal-soft);
+	border: 1px solid var(--border-subtle);
 }
 
 .skill a {
@@ -15,13 +16,14 @@
 }
 
 .skill:hover {
-	background: #8EF9EE;
+	background: var(--accent-bright);
 	opacity: 1;
-	transition: background-color 0.3s ease-in-out;
+	transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+	box-shadow: var(--shadow-soft);
 }
 
 .skill:hover .skill-link {
-	color: var(--link-color);
+	color: var(--text-on-accent);
 	transition: color 0.3s ease-in-out;
 }
 

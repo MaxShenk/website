@@ -12,9 +12,9 @@
 .notfound-logo {
 	display: flex;
 	position: fixed;
-	border: 1px solid white;
+	border: 1px solid var(--border-subtle);
 	border-radius: 50%;
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+	box-shadow: var(--shadow-soft);
 	top: 4vh;
 	z-index: 999;
 }
@@ -56,17 +56,18 @@
 .not-found-link {
 	font-size: 1.5rem;
 	text-decoration: none;
-	color: #fff;
+	color: var(--text-on-teal);
 	background-color: var(--link-color);
 	padding: 1rem 2rem;
 	border-radius: 50px;
 	transition: all 0.3s ease-in-out;
+	box-shadow: var(--shadow-soft);
 }
 
 .not-found-link:hover {
-	background-color: #fff;
-	color: var(--link-color);
-	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+	background-color: var(--surface-elevated);
+	color: var(--link-hover);
+	box-shadow: var(--shadow-medium);
 }
 
 @media (max-width: 500px) {

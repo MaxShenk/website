@@ -12,13 +12,14 @@
 }
 
 .project:hover {
-	background: #8EF9EE;
+	background: var(--accent-bright);
 	opacity: 1;
-	transition: background-color 0.3s ease-in-out;
+	transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+	box-shadow: var(--shadow-soft);
 }
 
 .project:hover .project-link {
-	color: var(--link-color);
+	color: var(--text-on-accent);
 	transition: color 0.3s ease-in-out;
 }
 

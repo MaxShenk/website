@@ -8,9 +8,10 @@
 }
 
 .homepage-story:hover {
-	background: #fafafa;
+	background: var(--surface-card-hover);
 	opacity: 1;
-	transition: background-color 0.3s ease-in-out;
+	transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+	box-shadow: var(--shadow-soft);
 }
 
 .homepage-story-content {
@@ -49,6 +50,10 @@
 .homepage-story-link a {
 	color: var(--link-color);
 	text-decoration: none;
+}
+
+.homepage-story-link a:hover {
+	color: var(--link-hover);
 }
 
 @media (max-width: 600px) {

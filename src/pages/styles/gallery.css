@@ -1,24 +1,135 @@
+@import "../../data/styles.css";
+
+.gallery-logo-container {
+	display: flex;
+	justify-content: left;
+	padding-top: 25px;
+}
+
+.gallery-logo {
+	display: flex;
+	position: fixed;
+	border: 1px solid var(--border-subtle);
+	border-radius: 50%;
+	box-shadow: var(--shadow-soft);
+	top: 4vh;
+	z-index: 10;
+}
+
 .gallery-container {
 	display: flex;
 	flex-direction: column;
-	height: 100%;
-	margin: 0;
-    width: 100%;
+	width: 100%;
 	padding-top: 120px;
-    justify-content: center;
-    align-content: center;
+	padding-bottom: 2rem;
 }
 
-.gallery-wrapper{
-    justify-content: center;
-    margin-top: 5rem;
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;
-    border: 1px solid rgb(0, 0, 0);
-    box-shadow: #2b15453d 1px 10px 10px 5px;
-
+.gallery-wrapper {
+	max-width: 900px;
+	width: 100%;
+	margin: 0 auto;
+	border: 1px solid var(--border-medium);
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: var(--shadow-medium);
+	background: var(--surface-elevated);
 }
-.image-gallery{
-    height:25%;
+
+.gallery-wrapper .image-gallery-slide .image-gallery-image {
+	max-height: 65vh;
+	width: 100%;
+	object-fit: contain;
+	background: var(--bg-mint-subtle);
+}
+
+.gallery-video-slide {
+	position: relative;
+	width: 100%;
+}
+
+.gallery-video {
+	display: block;
+	background: #000;
+}
+
+.gallery-thumb-inner {
+	position: relative;
+	display: block;
+}
+
+.gallery-thumb-play {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.25rem;
+	color: var(--text-on-teal);
+	background: rgba(26, 47, 44, 0.45);
+	pointer-events: none;
+}
+
+.gallery-wrapper .image-gallery-icon {
+	color: var(--teal-deep);
+	filter: drop-shadow(0 1px 2px rgba(26, 47, 44, 0.15));
+}
+
+.gallery-wrapper .image-gallery-icon:hover {
+	color: var(--link-color);
+}
+
+.gallery-wrapper .image-gallery-left-nav,
+.gallery-wrapper .image-gallery-right-nav {
+	padding: 20px 8px;
+}
+
+.gallery-wrapper .image-gallery-left-nav .image-gallery-svg,
+.gallery-wrapper .image-gallery-right-nav .image-gallery-svg {
+	height: 64px;
+	width: 32px;
+}
+
+.gallery-wrapper .image-gallery-thumbnail.active,
+.gallery-wrapper .image-gallery-thumbnail:focus,
+.gallery-wrapper .image-gallery-thumbnail:hover {
+	border-color: var(--link-color);
+}
+
+.gallery-wrapper .image-gallery-thumbnail {
+	border-color: transparent;
+}
+
+.gallery-wrapper .image-gallery-description {
+	background: rgba(26, 47, 44, 0.75);
+	bottom: 0;
+}
+
+.gallery-wrapper .image-gallery-index {
+	background: rgba(26, 47, 44, 0.6);
+}
+
+.gallery-wrapper .image-gallery-bullets .image-gallery-bullet {
+	border-color: var(--teal-mid);
+	box-shadow: none;
+}
+
+.gallery-wrapper .image-gallery-bullets .image-gallery-bullet.active {
+	background: var(--link-color);
+	border-color: var(--link-color);
+}
+
+@media (max-width: 768px) {
+	.gallery-container {
+		padding-top: 100px;
+	}
+
+	.gallery-wrapper .image-gallery-slide .image-gallery-image {
+		max-height: 50vh;
+	}
+
+	.gallery-wrapper .image-gallery-left-nav .image-gallery-svg,
+	.gallery-wrapper .image-gallery-right-nav .image-gallery-svg {
+		height: 48px;
+		width: 24px;
+	}
 }

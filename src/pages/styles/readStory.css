@@ -9,9 +9,9 @@
 .read-story-logo {
 	display: flex;
 	position: fixed;
-	border: 1px solid white;
+	border: 1px solid var(--border-subtle);
 	border-radius: 50%;
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+	box-shadow: var(--shadow-soft);
 	top: 4vh;
 }
 
@@ -32,7 +32,7 @@
 .read-story-back-button {
 	width: 50px;
 	border-radius: 50%;
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+	box-shadow: var(--shadow-soft);
 }
 
 .read-story-wrapper {
@@ -65,10 +65,12 @@
 	line-height: 30px;
 	font-family: system-ui;
 	align-self: left;
-	color: #52525b;
+	color: var(--secondary-color);
 }
 
 .pdf-container {
-	border: 3px solid rgba(0, 0, 0, 0.3);
-    height: 750px;
+	border: 1px solid var(--border-medium);
+	border-radius: 8px;
+	height: 750px;
+	box-shadow: var(--shadow-soft);
 }
