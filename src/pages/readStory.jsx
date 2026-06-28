@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import { Worker } from '@react-pdf-viewer/core';
+import { Worker, Viewer } from '@react-pdf-viewer/core';
+import '@react-pdf-viewer/core/lib/styles/index.css';
+import pdfjsWorker from 'pdfjs-dist/build/pdf.worker.min.js?url';
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
-import { Viewer } from '@react-pdf-viewer/core';
-import '@react-pdf-viewer/core/lib/styles/index.css';
 import INFO from "../data/user";
 import myStories from "../data/stories";
 
@@ -57,11 +57,10 @@ const ReadArticle = () => {
 							<div className="title read-story-title">
 								{story().title}
 							</div>
-							<Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
-								<div className = "pdf-container" >
-									<Viewer fileUrl={story().body} className = "pdf-viewer" />;
+							<Worker workerUrl={pdfjsWorker}>
+								<div className="pdf-container">
+									<Viewer fileUrl={story().body} className="pdf-viewer" />
 								</div>
-							
 							</Worker>
 						</div>
 					</div>
