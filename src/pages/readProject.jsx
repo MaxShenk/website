@@ -50,7 +50,7 @@ const ReadProject = () => {
 					<div className="read-project-container">
 						<div className="read-project-back">
 							<img
-								src="../back-button.png"
+								src="../back_button.png"
 								alt="back"
 								className="read-project-back-button"
 								onClick={() => navigate(-1)}
@@ -71,6 +71,17 @@ const ReadProject = () => {
 							<p></p>
 							<div className="read-project-body">
 								{project().description}
+								{project().url && (
+									<p className="read-project-link">
+										<a
+											href={project().url}
+											target="_blank"
+											rel="noreferrer"
+										>
+											{project().url}
+										</a>
+									</p>
+								)}
 								<p></p>
 								<ProjectStyle>{project().body}</ProjectStyle>
 							</div>

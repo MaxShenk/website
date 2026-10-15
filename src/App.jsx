@@ -11,6 +11,7 @@ import ReadProject from "./pages/readProject";
 import Contact from "./pages/contact";
 import Notfound from "./pages/404";
 import Gallery from "./pages/gallery";
+import Resume from "./pages/resume";
 
 import { TRACKING_ID } from "./data/tracking";
 import "./app.css";
@@ -32,6 +33,7 @@ function App() {
 				<Route path="/story/:slug" element={<ReadArticle />} />
 				<Route path="/projects/:slug" element={<ReadProject />} />
 				<Route path="/gallery" element={<Gallery />} />
+				<Route path="/resume" element={<Resume />} />
 				<Route path="/contact" element={<Contact />} />
 				<Route path="*" element={<Notfound />} />
 			</Routes>

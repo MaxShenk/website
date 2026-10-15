@@ -45,7 +45,7 @@ const ReadArticle = () => {
 					<div className="read-story-container">
 						<div className="read-story-back">
 							<img
-								src="../back-button.png"
+								src="../back_button.png"
 								alt="back"
 								className="read-story-back-button"
 								onClick={() => navigate(-1)}

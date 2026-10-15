@@ -1,0 +1,84 @@
+@import "../../data/styles.css";
+
+.resume-logo-container {
+	display: flex;
+	justify-content: left;
+	padding-top: 25px;
+}
+
+.resume-logo {
+	display: flex;
+	position: fixed;
+	border: 1px solid var(--border-subtle);
+	border-radius: 50%;
+	box-shadow: var(--shadow-soft);
+	top: 4vh;
+}
+
+.resume-container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	margin: 0;
+	padding-top: 120px;
+	padding-bottom: 40px;
+}
+
+.resume-title {
+	padding-bottom: 10px;
+	width: 100% !important;
+}
+
+.resume-skills {
+	width: 100%;
+	border-radius: 20px;
+	background-color: var(--teal-soft);
+	border: 1px solid var(--border-subtle);
+	margin-bottom: 28px;
+}
+
+.resume-skills .some-skills-container {
+	margin-left: 12px;
+	margin-right: 12px;
+	padding-top: 16px;
+	padding-bottom: 8px;
+}
+
+.resume-skills .some-skills-skill {
+	width: calc(100% / 6);
+}
+
+.resume-skills .skill {
+	height: auto;
+}
+
+.resume-skills .skill-title {
+	font-size: 14px;
+	line-height: 1.25;
+	min-height: 2.5em;
+}
+
+@media (max-width: 900px) {
+	.resume-skills .some-skills-skill {
+		width: calc(100% / 4);
+	}
+}
+
+@media (max-width: 600px) {
+	.resume-skills .some-skills-skill {
+		width: calc(100% / 3);
+	}
+}
+
+.pdf-container {
+	border: 1px solid var(--border-medium);
+	border-radius: 8px;
+	height: 750px;
+	box-shadow: var(--shadow-soft);
+}
+
+@media (max-width: 800px) {
+	.pdf-container {
+		height: 70vh;
+	}
+}

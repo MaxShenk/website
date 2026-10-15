@@ -1,36 +1,36 @@
 :root {
-	/* ------- brand palette (mint / teal family) ------- */
-	--bg-mint: #d8f8f5;
-	--bg-mint-subtle: #e9faf7;
-	--teal-deep: #3a6b65;
-	--teal-mid: #5f9289;
-	--teal-soft: #9bbdb8;
-	--accent-bright: #7ef5ea;
-	--accent-bright-hover: #5ce8db;
+	/* ------- brand palette (stone + forest) ------- */
+	--bg-mint: #f4f1ec;
+	--bg-mint-subtle: #e8e4dc;
+	--teal-deep: #1b2a27;
+	--teal-mid: #243632;
+	--teal-soft: #c9d4cf;
+	--accent-bright: #c4a36a;
+	--accent-bright-hover: #ad8c52;
 
 	/* ------- surfaces ------- */
-	--surface-card: #f2fcfa;
-	--surface-card-hover: #e6f7f3;
+	--surface-card: #fbfaf8;
+	--surface-card-hover: #efece6;
 	--surface-elevated: #ffffff;
-	--surface-muted: #b5d4cf;
+	--surface-muted: #d7d2c9;
 
-	/* ------- text (higher contrast on mint) ------- */
-	--primary-color: #1a2f2c;
-	--secondary-color: #3a504c;
-	--tertiary-color: #5a716c;
-	--quaternary-color: #8fa9a4;
-	--link-color: #0f766e;
-	--link-hover: #0d5c56;
-	--text-on-teal: #f0fdf9;
-	--text-on-accent: #134e4a;
+	/* ------- text ------- */
+	--primary-color: #1a1f1e;
+	--secondary-color: #3d4744;
+	--tertiary-color: #5c6763;
+	--quaternary-color: #8a9490;
+	--link-color: #1d564e;
+	--link-hover: #143c37;
+	--text-on-teal: #f7f4ef;
+	--text-on-accent: #1a1f1e;
 
 	/* ------- borders & shadows ------- */
-	--border-subtle: #c5ddd8;
-	--border-medium: #9fc4bd;
-	--shadow-color: rgba(26, 47, 44, 0.1);
+	--border-subtle: #e2ddd5;
+	--border-medium: #ccc6bc;
+	--shadow-color: rgba(27, 36, 33, 0.08);
 	--shadow-soft: 0 2px 12px var(--shadow-color);
-	--shadow-medium: 0 6px 24px rgba(26, 47, 44, 0.12);
-	--shadow-nav: 0 2px 16px rgba(26, 47, 44, 0.16);
+	--shadow-medium: 0 6px 24px rgba(27, 36, 33, 0.1);
+	--shadow-nav: 0 2px 16px rgba(27, 36, 33, 0.18);
 
 	/* ------- fonts ------- */
 	--primary-font: "Heebo", sans-serif;

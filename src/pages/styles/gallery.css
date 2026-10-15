@@ -42,6 +42,7 @@
 	background: var(--bg-mint-subtle);
 }
 
+.gallery-image-slide,
 .gallery-video-slide {
 	position: relative;
 	width: 100%;

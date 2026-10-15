@@ -12,14 +12,14 @@
 }
 
 .project:hover {
-	background: var(--accent-bright);
+	background: var(--surface-card-hover);
 	opacity: 1;
 	transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 	box-shadow: var(--shadow-soft);
 }
 
 .project:hover .project-link {
-	color: var(--text-on-accent);
+	color: var(--link-color);
 	transition: color 0.3s ease-in-out;
 }
 

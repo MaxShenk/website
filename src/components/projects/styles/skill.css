@@ -7,7 +7,7 @@
 	border-radius: 20px;
 	opacity: 0.92;
 	height: 100%;
-	background: var(--teal-soft);
+	background: var(--surface-muted);
 	border: 1px solid var(--border-subtle);
 }
 
@@ -16,14 +16,14 @@
 }
 
 .skill:hover {
-	background: var(--accent-bright);
+	background: var(--surface-card-hover);
 	opacity: 1;
 	transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 	box-shadow: var(--shadow-soft);
 }
 
 .skill:hover .skill-link {
-	color: var(--text-on-accent);
+	color: var(--link-color);
 	transition: color 0.3s ease-in-out;
 }
 

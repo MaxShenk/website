@@ -12,6 +12,12 @@ const OpenGLSkill = allSkills[8];
 const CSSkill = allSkills[9];
 const UnitySkill = allSkills[10];
 const BlenderSkill = allSkills[11];
+const PythonSkill = allSkills[12];
+const TypeScriptSkill = allSkills[13];
+const ReactSkill = allSkills[14];
+const CloudflareSkill = allSkills[15];
+const SupabaseSkill = allSkills[16];
+const SQLSkill = allSkills[17];
 
 function project_1() {
 	return {
@@ -45,7 +51,7 @@ function project_1() {
 			<React.Fragment>
 				<div className="project-content">
 				<img
-						src="../WebCheckers.PNG"
+						src="../web_checkers.png"
 						alt="random"
 						className="randImage"
 				/>
@@ -105,7 +111,7 @@ function project_2() {
 		body: (
 			<React.Fragment>
 				<img
-						src="../3D Engine.PNG"
+						src="../3d_engine.png"
 						alt="random"
 						className="randImage"
 				/>
@@ -159,7 +165,7 @@ function project_3() {
 		body: (
 			<React.Fragment>
 				<div className="project-content">
-				<video className="video-content" src="../PowerApp.mp4" width="100%" controls="controls" autoplay="true" />
+				<video className="video-content" src="../power_app.mp4" width="100%" controls="controls" autoplay="true" />
 				<p></p>
 				<hr height= "9px" />
 				<p></p>
@@ -245,7 +251,7 @@ function project_3() {
 			body: (
 				<React.Fragment>
 					<div className="project-content">
-					<video className="video-content" src="../ALaKart.mp4" width="100%" height="100%" controls="controls" autoplay="true" />
+					<video className="video-content" src="../a_la_kart.mp4" width="100%" height="100%" controls="controls" autoplay="true" />
 					<p></p>
 					<hr height= "9px" />
 					<h1>Project History</h1>
@@ -255,7 +261,7 @@ function project_3() {
 					<p></p>
 					 </div>
 					 <img
-						src="../GreekTruck.PNG"
+						src="../greek_truck.png"
 						alt="Greek Truck"
 						className="randImage"
 						/>
@@ -267,7 +273,7 @@ function project_3() {
 					 </div>
 					 <p></p>
 					 <img
-						src="../AAKTrucks.jpg"
+						src="../aak_trucks.jpg"
 						alt="Greek Truck"
 						className="randImage"
 						/>
@@ -326,7 +332,7 @@ function project_5() {
 		body: (
 			<React.Fragment>
 				<div className="project-content">
-				<video className="video-content" src="../Java Game.mp4" width="100%" height="100%" controls="controls" autoplay="true" />
+				<video className="video-content" src="../java_game.mp4" width="100%" height="100%" controls="controls" autoplay="true" />
 				<p></p>
 				<hr height= "9px" />
 				<h1>Project History</h1>
@@ -353,6 +359,449 @@ function project_5() {
 		),
 	};
 }
-const myProjects = [project_1, project_2,project_3,project_4,project_5];
+function project_6() {
+	return {
+		date: "2026",
+		title: "Wheremart",
+		description:
+			"In progress. A first-person game where you pick up store items and dock into machines to solve them.",
+		keywords: [
+			"Wheremart",
+			"Athyros",
+			"Maxwell",
+			"Maxwell S",
+			"Maxwell Shenk",
+		],
+		skills: [CSSkill, UnitySkill, BlenderSkill],
+		style: `
+			.project-content {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.randImage {
+				width: 100%;
+				align-self: center;
+				outline: 2px solid black;
+			}
+			.video-content {
+				width: 100%;
+				align-self: center;
+				outline: 2px solid black;
+			}
+			`,
+		body: (
+			<React.Fragment>
+				<div className="project-content">
+					<video className="video-content" src="../wheremart.mp4" width="100%" controls="controls" />
+					<p></p>
+					<hr />
+					<h1>Project History</h1>
+					<div className="paragraph">
+						This one is still in progress. Wheremart is a first-person store, built in Unity, where the interesting part is not walking the aisles. It is the machines. You pick up an item, walk up to a puzzle, and the camera docks into it. From there a software cursor lets you drag parts, turn dials, and use whatever you are holding.
+					</div>
+					<p></p>
+					<img src="../wheremart_aisle.jpg" alt="Wheremart aisle" className="randImage" />
+					<p></p>
+					<div className="paragraph">
+						The store art is modeled in Blender: shelving, a water bottle, an ID badge, a combination lock, and a self-checkout kiosk. The Unity project is named Athyros. The player is Stella. Each machine is a small set of reusable pieces. A hotspot is something you can use, a motion is a part that rotates or slides, and a brain script decides when the machine is solved. The checkout and the lock are two of those brains.
+					</div>
+					<p></p>
+					<video className="video-content" src="../wheremart_checkout.mp4" width="100%" controls="controls" />
+					<p></p>
+					<div className="paragraph">
+						The checkout is the centerpiece so far. The kiosk has a screen, a bagging area, and a scanner, and the playtest below is me working through that interaction with a bottle on the belt.
+					</div>
+					<p></p>
+					<img src="../wheremart_kiosk.png" alt="Checkout kiosk sketch" className="randImage" />
+					<p></p>
+					<video className="video-content" src="../wheremart_lock.mp4" width="100%" controls="controls" />
+					<p></p>
+					<div className="paragraph">
+						The combination lock is the same idea at a smaller scale. You dock the camera, then drag the dials. I am still building the store out around these machines, so the aisles are sparse on purpose. The playtests are there to show the interactions, not a finished level.
+					</div>
+					<hr className="project-hor-line" />
+				</div>
+			</React.Fragment>
+		),
+	};
+}
+
+function project_7() {
+	return {
+		date: "2026",
+		title: "Biception",
+		description:
+			"In progress. A blob you pilot through two independently aimed eyes, with a grapple and a gun.",
+		keywords: [
+			"Biception",
+			"Maxwell",
+			"Maxwell S",
+			"Maxwell Shenk",
+		],
+		skills: [CSSkill, UnitySkill, BlenderSkill],
+		style: `
+			.project-content {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.randImage {
+				width: 100%;
+				align-self: center;
+				outline: 2px solid black;
+			}
+			.video-content {
+				width: 100%;
+				align-self: center;
+				outline: 2px solid black;
+			}
+			`,
+		body: (
+			<React.Fragment>
+				<div className="project-content">
+					<video className="video-content" src="../biception.mp4" width="100%" controls="controls" />
+					<p></p>
+					<hr />
+					<h1>Project History</h1>
+					<div className="paragraph">
+						This one is still in progress. Biception is a creature you pilot rather than a person you walk around as. The body is a ball. It has two eyes, and each eye aims on its own. On a gamepad the two sticks drive the two eyes. The same actions also bind to VR controllers, so a headset can stand in for the gamepad.
+					</div>
+					<p></p>
+					<div className="paragraph">
+						The left and right views in the playtests are those two eyes. Labels in the corner mark the left eye and the right eye. One eye can look at a grapple point while the other watches where the gun is pointed. Thrust, brake, reel, and payout are separate inputs, so moving and aiming are not the same stick.
+					</div>
+					<p></p>
+					<video className="video-content" src="../biception2.mp4" width="100%" controls="controls" />
+					<p></p>
+					<div className="paragraph">
+						The blob itself and the ground tiles are made in Blender. The grass is hand-painted, including a normal map, because I wanted the floor to read clearly under a camera that is often an inch off the ground. These clips are early playtests of the eye split and the movement, not a finished level.
+					</div>
+					<hr className="project-hor-line" />
+				</div>
+			</React.Fragment>
+		),
+	};
+}
+
+function project_8() {
+	return {
+		date: "2026",
+		title: "RCT3 VR",
+		description:
+			"A C++ Direct3D 9 proxy that adds side-by-side stereo and optional OpenXR to RollerCoaster Tycoon 3.",
+		keywords: [
+			"RCT3",
+			"OpenXR",
+			"Maxwell",
+			"Maxwell S",
+			"Maxwell Shenk",
+		],
+		skills: [CPPSkill],
+		style: `
+			.project-content {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.randImage {
+				width: 100%;
+				align-self: center;
+				outline: 2px solid black;
+			}
+			`,
+		body: (
+			<React.Fragment>
+				<div className="project-content">
+					<img src="../rct3_vr.jpg" alt="RCT3 VR" className="randImage" />
+					<p></p>
+					<hr />
+					<h1>Project History</h1>
+					<div className="paragraph">
+						When I was young I was a big fan of the Roller Coaster Tycoon series. Roller Coaster Tycoon 3 was the first game I ever purchased on my own and I played it for many hours. It was always my dream to be able to really ride the rides that I constructed.
+						The goal of this modification was to help make that a reality. It sits in front of Direct3D 9 as a proxy DLL named d3d9.dll, next to RCT3.exe, and renders the frame twice for side-by-side stereo. An optional path submits the left and right images to a PC VR runtime through OpenXR, so SteamVR, Oculus, or Windows Mixed Reality can display them.
+					</div>
+					<p></p>
+					<div className="paragraph">
+						The build is CMake and Visual Studio 2022. The original game is 32-bit, and the Complete Edition can be 64-bit, so the project builds for both. A small ini file sets the interpupillary distance and a scale from meters to game units, because RCT3's world is not in meters. F11 toggles stereo while the game is running, and F9 toggles a debug overlay. A log file next to the DLL reports whether OpenXR actually came up.
+					</div>
+					<hr className="project-hor-line" />
+				</div>
+			</React.Fragment>
+		),
+	};
+}
+
+function project_9() {
+	return {
+		date: "2025",
+		title: "Game for Wilma",
+		description:
+			"A floor-projected 2D game of mice, cheese, and mushrooms, made for my cat Wilma to chase.",
+		keywords: [
+			"Wilma",
+			"Maxwell",
+			"Maxwell S",
+			"Maxwell Shenk",
+		],
+		skills: [CSSkill, UnitySkill],
+		style: `
+			.project-content {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.randImage {
+				width: 100%;
+				align-self: center;
+				outline: 2px solid black;
+			}
+			.video-content {
+				width: 100%;
+				align-self: center;
+				outline: 2px solid black;
+			}
+			`,
+		body: (
+			<React.Fragment>
+				<div className="project-content">
+					<video className="video-content" src="../wilma_game.mp4" width="100%" controls="controls" />
+					<p></p>
+					<hr />
+					<h1>Project History</h1>
+					<div className="paragraph">
+						I had never been much of a cat person before I moved in with my roommate. However, after a couple months of living together, I quickly became very attached to her cat Wilma. I was drawn in by her curiosity and her intellect. Having only grown up with dogs, I was amazed by her problem solving skills and her ability to learn.
+						I also became aware of her draw towards these Youtube videos commonly referred to as "CatTV." Videos of animals designed to specifically to entertain cats, and it worked. She would sit there for hours just watching the squirrels, mice and birds. Occasionally she would get up and swat at the screen and that is what inspired me.
+						I wanted to be involved, and I wanted her to have the satisfaction of not just chasing the prey but actually catching it. I wanted a game that allowed both of us to be active participants and take a solo activity for her and turn it into something we could both enjoy together.
+					</div>
+					<p></p>
+					<div className="paragraph">
+						As a fan of Tom and Jerry the first thing that sprung to mind was a literal game of cat and mouse. The human player would control the mouse while the cat chase and capture the mouse. 
+						The concept was fairly simple but proved to be engaging for both the player and the cat. I remember the first test play session we had, Wilma caught over 90 mouse before she grew tired.
+						Through much expermentation I found that the movement of the tail was very important, as well as the ability for the mouse to hide underneath objects and foliage. Most of all, I found her
+						drawn to the gore and enjoyed the visceral explosion of blood and guts on the screen, it is apparent that cats do not share the same moral and ethical hang ups that might concern us humans.
+						I also found that like humans, her desire for diversity and variation was strong, she eventually grew bored of the forest scene and was re-engaged with the new underwater level.
+					</div>
+					<p></p>
+					<video className="video-content" src="../wilma_attack.mp4" width="100%" controls="controls" />
+					<p></p>
+					<div className="paragraph">
+						All the art was done by me using the open source software Krita.
+					</div>
+					<p></p>
+					<video className="video-content" src="../wilma_watching.mp4" width="100%" controls="controls" />
+					<p></p>
+					<div className="paragraph">
+						The phone videos are Wilma actually playing with it. One is her attacking the projection, and the other is her sitting on it and watching the mice. I also built Mac and Windows players so I could take the game off the dev machine and point a projector at the floor.
+					</div>
+					<hr className="project-hor-line" />
+				</div>
+			</React.Fragment>
+		),
+	};
+}
+
+function project_10() {
+	return {
+		date: "2023",
+		title: "Ignorance Abolisher",
+		description:
+			"A world-map quiz. A capital is called out, and you click the right city before you run out of strikes.",
+		keywords: [
+			"Ignorance Abolisher",
+			"Maxwell",
+			"Maxwell S",
+			"Maxwell Shenk",
+		],
+		skills: [CSSkill, UnitySkill],
+		style: `
+			.project-content {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.randImage {
+				width: 100%;
+				align-self: center;
+				outline: 2px solid black;
+			}
+			`,
+		body: (
+			<React.Fragment>
+				<div className="project-content">
+					<img src="../ignorance_map.png" alt="World map" className="randImage" />
+					<p></p>
+					<hr />
+					<h1>Project History</h1>
+					<div className="paragraph">
+						Ignorance Abolisher is a capitals quiz on a world map. The game picks a capital at random and asks for it. Clicking the right city removes it from the remaining list. Clicking the wrong one marks that city and adds a strike. Escape pauses the game, and a menu scene sits in front of the map.
+					</div>
+					<p></p>
+					<div className="paragraph">
+						The map can be dragged around, which matters once the cities are small. I used a high-resolution world image so country borders stay readable when the camera is pulled in on Europe or the Caribbean. It is a smaller project than the games around it, but it is a complete loop: question, guess, strike, and a shrinking set of cities until the list is gone.
+					</div>
+					<hr className="project-hor-line" />
+				</div>
+			</React.Fragment>
+		),
+	};
+}
+
+function project_11() {
+	return {
+		date: "2026",
+		title: "MemoType",
+		description:
+			"Typing practice and flashcards, built in TypeScript and React, with a Python desktop app too.",
+		url: "https://memotype.maxwell-shenk.workers.dev/",
+		keywords: ["MemoType", "Maxwell", "Maxwell S", "Maxwell Shenk"],
+		skills: [TypeScriptSkill, ReactSkill, PythonSkill, SQLSkill, SupabaseSkill, CloudflareSkill],
+		style: `
+			.project-content {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.randImage {
+				width: 100%;
+				align-self: center;
+				outline: 2px solid black;
+			}
+			`,
+		body: (
+			<React.Fragment>
+				<div className="project-content">
+					<img src="../memo_type_library.jpg" alt="MemoType passage library" className="randImage" />
+					<p></p>
+					<hr />
+					<h1>Project History</h1>
+					<div className="paragraph">
+						If there is one thing in this world I have a passion for, it is learning. Learning is not easy, if you expect to just read a couple books or watch a couple tutorial videos and retain that knowledge forever, you can expect to be disappointed.
+						Learning is practice and hardwork. Unfortunately, many of the best tools out there are hidden behind paywalls and boged down by unnecessary features and distractions. What I hope to accomplish with this web application is to create an entirely free
+						application focused on effective, tried and true learning strategies. 
+					</div>
+					<p></p>
+					<img src="../memo_type.jpg" alt="MemoType typing practice" className="randImage" />
+					<p></p>
+					<div className="paragraph">
+						In Hyperion, one of my favorite characters in fiction, Martin Silenus, on the topic of poetry, says that the only true way to appreciate poetry is through memorization. To build a complete mental image of a poem in one's mind allows the subtler appreciation
+						of its interconnectivity and nuance. As a student of literature I was facinated by this idea, reading poetry without memorization is like examining individual parts of painting through a magnifying and expecting to grasp the message of the whole.
+						So, I through trial and error developed a method that helps me memorize best. It is reminicent of the typing training games of my third grade computer lab, but I have found it to be very effective at teaching.
+						With two different modes, the first just typing along with the passage, and the second when the passage is hidden and you must type to reveal it. The ability to learn a passage is so rapid and ingrained so effectively, I feel as though up until this point I had been learning with one arm tied behind my back.
+					</div>
+					<p></p>
+					<img src="../memo_type_flash.jpg" alt="MemoType dictionary deck builder" className="randImage" />
+					<p></p>
+					<div className="paragraph">
+						In my honest opinion, learning tools should be free, full-stop. Quizlet proved to be a very effective tool for me throughout school and beyond. However, I was often frustrated by the pay-wall nature of the application
+						and after years of paying for Quizlet Plus, I decided to build my own version, because at it's core there is nothing complicated about it at all. I opted for three modes, chunked, ordered and weighted, for varied learning styles.
+						You can create your own decks in application, upload and share JSON formatted cards, see extensive progress statistics and create auto-generated vocabulary decks based on frequency in the english language, to learn more uncommon, challenging words. 
+					</div>
+					<p></p>
+					<p></p>
+					<div className="paragraph">
+						It was built in Python originally as a simple desktop application, but later converted to Typescript and React PWA so that I could easily put it on any phone and use it in any browser. It is hosted on Cloudflare with a Supabase database, all for free, but scalable. You can use it at <a href="https://memotype.maxwell-shenk.workers.dev/" target="_blank" rel="noreferrer">memotype.maxwell-shenk.workers.dev</a>.
+					</div>
+					<p></p>
+					<hr className="project-hor-line" />
+				</div>
+			</React.Fragment>
+		),
+	};
+}
+
+function project_12() {
+	return {
+		date: "2026",
+		title: "Rhymigo",
+		description:
+			"A poetry editor in Python and JavaScript. It counts syllables, marks rhymes and scansion, and suggests the next word.",
+		keywords: ["Rhymigo", "Rap Writer", "Maxwell", "Maxwell S", "Maxwell Shenk"],
+		skills: [PythonSkill, JavaScriptSkill],
+		style: `
+			.project-content {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.randImage {
+				width: 100%;
+				align-self: center;
+				outline: 2px solid black;
+			}
+			`,
+		body: (
+			<React.Fragment>
+				<div className="project-content">
+					<img src="../rhymigo.jpg" alt="Rhymigo rhyme editor" className="randImage" />
+					<p></p>
+					<hr />
+					<h1>Project History</h1>
+					<div className="paragraph">
+						As the youngest child, I didn't get a lot of choice in much of my childhood, especially when it came to music. I listened to whatever my sister, brothers or parents had on and that was that.
+						It wasn't until I was a teenager that I started spending more time on my own and discovering my own taste in music and the first genre I discovered that no one else in my family had already claimed was hip-hop.
+						Hip-hop had such a huge influence on my appreciation for music as a whole, I was facinated by the intricate lyricism and the intoxicating beats. Naturally, overtime I developed a budding desire to write and create my own rap music.
+						To help in the process I developed a tool that helped with flow, rhyming and structure. Based on rap lyrics and the book Sound and Sense, a breakdown of poetry. 
+					</div>
+					<p></p>
+					<img src="../rhymigo_light.jpg" alt="Rhymigo multi-word rhymes and suggestions" className="randImage" />
+					<p></p>
+					<div className="paragraph">
+						Every line gets a syllable count and a scansion pattern, real-time as you type. Rhymes between nearby lines are colored by vowel sound and graded as perfect, slant, or assonance. End rhymes are stronger than rhymes in the middle of a line, and short phrases can match as one rhyme, so "hit her" lines up with "hitter." A rap-pronunciation toggle drops the g in -ing and treats -er more like -a before it matches. The sidebar suggests rhymes for the word you are working from. Raps save as plain text files.
+					</div>
+					<hr className="project-hor-line" />
+				</div>
+			</React.Fragment>
+		),
+	};
+}
+
+function project_13() {
+	return {
+		date: "2026",
+		title: "Shopping Cat",
+		description:
+			"A TypeScript and React meal calendar that facilitates both meal planning, recipe management and grocery shopping.",
+		url: "https://grocery-calendar.maxwell-shenk.workers.dev/",
+		keywords: ["Shopping Cat", "Grocery Calendar", "Maxwell", "Maxwell S", "Maxwell Shenk"],
+		skills: [TypeScriptSkill, ReactSkill, SQLSkill, SupabaseSkill, CloudflareSkill],
+		style: `
+			.project-content {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.randImage {
+				width: 100%;
+				align-self: center;
+				outline: 2px solid black;
+			}
+			`,
+		body: (
+			<React.Fragment>
+				<div className="project-content">
+					<img src="../grocery_month.jpg" alt="Shopping Cat month calendar" className="randImage" />
+					<p></p>
+					<hr />
+					<h1>Project History</h1>
+					<div className="paragraph">
+						Shopping Cat is a TypeScript and React app for planning meals on a month calendar. Open a day and you get breakfast, lunch, dinner, and a snack, stacked as cards you can swipe between. Each meal is a list of items, with amounts and units, or a saved recipe. A recipe quantity multiplies its ingredients, so cooking for four does not mean typing the list four times.
+					</div>
+					<p></p>
+					<img src="../grocery_calendar.jpg" alt="Shopping Cat breakfast card" className="randImage" />
+					<p></p>
+					<div className="paragraph">
+						Days you select roll up into one master grocery list, with checks for what is already in the cart, and the list can be exported. Recipes live in their own manager. Change a recipe and you can push that change onto the days that already use it. The planner keeps itself in the browser, and it can sign in if you want the same calendar on another device. You can use it at <a href="https://grocery-calendar.maxwell-shenk.workers.dev/" target="_blank" rel="noreferrer">grocery-calendar.maxwell-shenk.workers.dev</a>.
+					</div>
+					<p></p>
+					<img src="../grocery_list.jpg" alt="Shopping Cat grocery list" className="randImage" />
+					<hr className="project-hor-line" />
+				</div>
+			</React.Fragment>
+		),
+	};
+}
+
+const myProjects = [project_11, project_12, project_13, project_9, project_6, project_7, project_8, project_1, project_2, project_3, project_4, project_5, project_10];
 
 export default myProjects;

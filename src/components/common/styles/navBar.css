@@ -17,7 +17,7 @@
 }
 
 .nav-background {
-	width: 380px;
+	width: 470px;
 	height: 40px;
 	padding-left: 0%;
 	padding-right: 0%;
@@ -52,21 +52,28 @@
 }
 
 .nav-item a:hover {
-	color: var(--accent-bright);
+	color: var(--accent-bright-hover);
 	transition: color 0.3s ease-in-out;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 	.navbar {
-		margin-left: 25%;
-		margin-right: 25%;
-		width: 80%;
-		font-size: 80%;
+		left: 58px;
+		right: 10px;
+		width: auto;
+		font-size: 72%;
 	}
 
 	.nav-background {
-		width: 80%;
+		width: 100%;
 		height: 40px;
+	}
+
+	.nav-list {
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0 10px;
+		box-sizing: border-box;
 	}
 
 	.nav-item {

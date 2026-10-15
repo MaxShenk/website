@@ -34,6 +34,12 @@ const SEO = [
 		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
 	},
 	{
+		page: "resume",
+		description:
+			"Maxwell Shenk's resume.",
+		keywords: ["Maxwell Shenk", "resume"],
+	},
+	{
 		page: "gallery",
 		description:
 			"If you're interested in collaborating on a project, feel free to reach out to me. I'm always open to new ideas and opportunities.",

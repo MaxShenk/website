@@ -52,11 +52,18 @@ const Gallery = () => {
 		}
 
 		return (
-			<img
-				className="image-gallery-image"
-				src={item.original}
-				alt={item.description || ""}
-			/>
+			<div className="gallery-image-slide">
+				<img
+					className="image-gallery-image"
+					src={item.original}
+					alt={item.description || ""}
+				/>
+				{item.description && (
+					<span className="image-gallery-description">
+						{item.description}
+					</span>
+				)}
+			</div>
 		);
 	}, []);
 

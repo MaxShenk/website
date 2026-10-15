@@ -32,10 +32,66 @@ const INFO = {
 
 	projects: [
 		{
+			title: "MemoType",
+			description:
+				"A custom tool for learning, built in TypeScript and React, with a Python desktop app too. Live at memotype.maxwell-shenk.workers.dev.",
+			logo: "../memo_type.jpg",
+			linkText: "View Project",
+		},
+
+		{
+			title: "Rhymigo",
+			description:
+				"A poetry editor in Python and JavaScript. It counts syllables, marks rhymes and scansion, and suggests the next word.",
+			logo: "../rhymigo.jpg",
+			linkText: "View Project",
+		},
+
+		{
+			title: "Shopping Cat",
+			description:
+				"A TypeScript and React meal calendar that facilitates both meal planning, recipe management and grocery shopping. Live at grocery-calendar.maxwell-shenk.workers.dev.",
+			logo: "../grocery_calendar.jpg",
+			linkText: "View Project",
+		},
+
+		{
+			title: "Game for Wilma",
+			description:
+				"A floor-projected 2D game of cat and mouse, made for my roommate's cat Wilma.",
+			logo: "../wilma.jpg",
+			linkText: "View Project",
+		},
+
+		{
+			title: "Wheremart",
+			description:
+				"(IN PROGRESS) A first-person puzzle game centered around being trapped in a mall. Unity and Blender.",
+			logo: "../wheremart_screenshot_1.png",
+			linkText: "View Project",
+		},
+
+		{
+			title: "Biception",
+			description:
+				"(IN PROGRESS) A blob you pilot with two independently aimed eyes, a grapple, and a gun.",
+			logo: "../biception.jpg",
+			linkText: "View Project",
+		},
+
+		{
+			title: "RCT3 VR",
+			description:
+				"A C++ Direct3D 9 proxy that adds side-by-side stereo and optional OpenXR to RollerCoaster Tycoon 3.",
+			logo: "../rct3_vr.jpg",
+			linkText: "View Project",
+		},
+
+		{
 			title: "WebCheckers",
 			description:
 				"An online checkers game suite. Includes multiplayer, tournament style and AI opponents. Java and Javascript.",
-			logo: "../CheckersBoard.png",
+			logo: "../checkers_board.png",
 			linkText: "View Project",
 		},
 
@@ -43,7 +99,7 @@ const INFO = {
 			title: "3D OpenGL Engine",
 			description:
 				"A three dimensional graphics engine created from scratch using C++ and OpenGL Libraries.",
-			logo: "../3D Engine.png",
+			logo: "../3d_engine.png",
 			linkText: "View Project",
 		},
 
@@ -51,7 +107,7 @@ const INFO = {
 			title: "PowerApps Games",
 			description:
 				"A collection of 3 games built entirely using Microsoft PowerApps.",
-			logo: "../PowerappsScreenShot.png",
+			logo: "../powerapps_screen_shot.png",
 			linkText: "View Project",
 			link: "https://github.com",
 		},
@@ -60,7 +116,7 @@ const INFO = {
 			title: "A-La-Kart",
 			description:
 				"A co-op competitive karting and cooking game. Created in Unity and Blender.",
-			logo: "../AlAKart.png",
+			logo: "../al_a_kart.png",
 			linkText: "View Project",
 			link: "https://github.com",
 		},
@@ -69,9 +125,17 @@ const INFO = {
 			title: "Java Game",
 			description:
 				"A 2D platformer game engine, created entirely in Java.",
-			logo: ".//JavaGame.png",
+			logo: ".//java_game.png",
 			linkText: "View Project",
 			link: "https://github.com",
+		},
+
+		{
+			title: "Ignorance Abolisher",
+			description:
+				"A world-map capitals quiz. Click the right city before you run out of strikes.",
+			logo: "../ignorance_map.png",
+			linkText: "View Project",
 		},
 	],
 };

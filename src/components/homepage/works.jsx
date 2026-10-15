@@ -15,7 +15,7 @@ const Works = () => {
 					<div className="works-body">
 						<div className="work">
 							<img
-								src="./Lubrizol.png"
+								src="./lubrizol.png"
 								alt="Lubrizol"
 								className="work-image"
 							/>
@@ -28,7 +28,7 @@ const Works = () => {
 
 						<div className="work">
 							<img
-								src="./GorillaGlue.png"
+								src="./gorilla_glue.png"
 								alt="Gorilla Glue"
 								className="work-image"
 							/>
@@ -40,7 +40,7 @@ const Works = () => {
 						</div>
 						<div className="work">
 							<img
-								src="./CodeWiz.png"
+								src="./code_wiz.png"
 								alt="CodeWiz"
 								className="work-image"
 							/>

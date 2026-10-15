@@ -85,3 +85,15 @@
 	box-shadow: var(--shadow-soft);
 	color: var(--primary-color);
 }
+
+.read-project-link {
+	margin-top: 16px;
+}
+
+.read-project-body a {
+	color: var(--link-color);
+}
+
+.read-project-body a:hover {
+	color: var(--link-hover);
+}
